@@ -58,3 +58,14 @@ S3 is commonly used for backup and restore, archive, content storage, data lakes
 **Transfer Acceleration:**
 - S3 Transfer Acceleration enables fast, easy, and secure transfers of files to and from Amazon S3 using a globally distributed network of edge locations.
 
+
+### S3 Storage Classes
+
+| Storage Class                | Description                                                                                                       | Use Cases                                       |
+|------------------------------|-------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|
+| **Standard**                 | Default storage class with low-latency and high-throughput performance.                                          | Frequently accessed data                        |
+| **Intelligent-Tiering**      | Automatically moves objects between access tiers based on changing access patterns.                                | Optimizing costs for varying access patterns    |
+| **One Zone-IA**              | Stores data in a single availability zone, reducing costs compared to Standard.                                   | Infrequently accessed data, easily recreatable  |
+| **Glacier**                  | Designed for long-term archival with retrieval times ranging from minutes to hours.                                | Data with long-term retention requirements     |
+| **Glacier Deep Archive**     | Lowest-cost storage class, optimized for rarely accessed data with long-term retention.                            | Extremely infrequently accessed data           |
+
