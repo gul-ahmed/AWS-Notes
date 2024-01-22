@@ -15,6 +15,18 @@ S3 is commonly used for backup and restore, archive, content storage, data lakes
 - A bucket is a container for objects stored in Amazon S3.
 - Each bucket has a globally unique name, and you use this name to access the bucket and its contents.
 - Buckets can be used to organize and control access to objects.
+- Amazon S3 allows people to store objects (files) in “buckets” (directories)
+- Buckets must have a globally unique name (across all regions all accounts)
+- Buckets are defined at the region level
+- S3 looks like a global service but buckets are created in a region
+
+ **`Naming convention`**
+- No uppercase, No underscore
+- 3-63 characters long
+- Not an IP
+- Must start with lowercase letter or number
+- Must NOT start with the prefix xn--
+- Must NOT end with the suffix -s3alias
 
 **Data Durability and Availability:**
 - Amazon S3 is designed for 99.999999999% (11 9's) durability over a given year and 99.99% availability over a given year.
