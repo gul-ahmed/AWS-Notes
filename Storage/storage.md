@@ -29,6 +29,26 @@ EBS volumes are designed for durability and high availability, providing a relia
 - EBS volumes can be encrypted using AWS Key Management Service (KMS) keys.
 - Encryption helps protect sensitive data and ensures compliance with security standards.
 
+### EBS Encryption
+
+When you create an encrypted EBS volume, you get the following:
+- Data at rest is encrypted inside the volume
+- All the data in flight moving between the instance and the volume is encrypted
+- All snapshots are encrypted
+- All volumes created from the snapshot
+- Encryption and decryption are handled transparently (you have nothing to do)
+- Encryption has a minimal impact on latency
+- EBS Encryption leverages keys from KMS (AES-256)
+- Copying an unencrypted snapshot allows encryption
+- Snapshots of encrypted volumes are encrypted
+
+### Encryption: encrypt an unencrypted EBS volume
+
+1. Create an EBS snapshot of the volume
+2. Encrypt the EBS snapshot ( using copy )
+3. Create new ebs volume from the snapshot ( the volume will also be encrypted )
+4. Now you can attach the encrypted volume to the original instance
+
 
 ### Lifecycle Management:
 
