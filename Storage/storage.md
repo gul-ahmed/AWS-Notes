@@ -6,7 +6,7 @@ It enables users to create scalable and high-performance block-level storage vol
 
 EBS volumes are designed for durability and high availability, providing a reliable storage solution for various applications.
 
-# Volume Types:
+### Volume Types:
 
 | Volume Type              | Description                                             | Characteristics                                                                                                                                                                  |
 |--------------------------|---------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -17,20 +17,20 @@ EBS volumes are designed for durability and high availability, providing a relia
 | **Magnetic (standard)**      | Legacy volume type with traditional magnetic hard drives. | Being phased out. <br>Used for workloads with low I/O requirements where cost is a significant factor.                                                                      |
 
 
-# Snapshots:
+### Snapshots:
 
 - EBS snapshots are point-in-time copies of EBS volumes.
 - They are stored incrementally, which means only the changes since the last snapshot are saved.
 - Snapshots can be used for backup, data recovery, and to create new volumes.
 
 
-# Volume Encryption:
+### Volume Encryption:
 
 - EBS volumes can be encrypted using AWS Key Management Service (KMS) keys.
 - Encryption helps protect sensitive data and ensures compliance with security standards.
 
 
-# Lifecycle Management:
+### Lifecycle Management:
 
 - Users can create, delete, and attach EBS volumes to EC2 instances as needed.
 - Volumes persist independently of the lifecycle of an EC2 instance, allowing data to be retained even if the instance is terminated.
