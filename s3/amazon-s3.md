@@ -69,3 +69,15 @@ S3 is commonly used for backup and restore, archive, content storage, data lakes
 | **Glacier**                  | Designed for long-term archival with retrieval times ranging from minutes to hours.                                | Data with long-term retention requirements     |
 | **Glacier Deep Archive**     | Lowest-cost storage class, optimized for rarely accessed data with long-term retention.                            | Extremely infrequently accessed data           |
 
+
+
+| Storage Class           | Description                                                    | Durability                           | Availability                       | Use Cases                                             |
+|-------------------------|----------------------------------------------------------------|--------------------------------------|-------------------------------------|-------------------------------------------------------|
+| Standard                | Designed for frequently accessed data                          | 99.999999999% (11 9's)               | 99.99%                              | General-purpose storage                                |
+| Intelligent-Tiering     | Automatically moves objects between two access tiers           | Same as Standard                    | Same as Standard                    | Data with unknown or changing access patterns           |
+| Standard-IA (Infrequent Access) | For infrequently accessed data with lower storage costs | Same as Standard                    | Same as Standard                    | Backup, long-term storage, disaster recovery            |
+| One Zone-IA             | Similar to Standard-IA but stores data in a single availability zone | 99.999999999%                       | 99.5%                               | Secondary backup copies, non-critical data               |
+| Glacier                 | Designed for archival and long-term backup                     | 99.999999999%                       | 99.99%                  | Archiving, regulatory compliance, data preservation     |
+| Glacier Deep Archive    | Lowest-cost storage class for archival data with longer retrieval times | Same as Glacier                  | Same as Glacier                  | Rarely accessed data for compliance or legal reasons    |
+| Outposts                | Designed for objects stored on AWS Outposts                     | Same as Standard                    | Same as Standard                    | On-premises applications integrated with AWS services  |
+
