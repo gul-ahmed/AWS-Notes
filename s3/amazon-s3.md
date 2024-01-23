@@ -81,3 +81,6 @@ S3 is commonly used for backup and restore, archive, content storage, data lakes
 | Glacier Deep Archive    | Lowest-cost storage class for archival data with longer retrieval times | Same as Glacier                  | Same as Glacier                  | Rarely accessed data for compliance or legal reasons    |
 | Outposts                | Designed for objects stored on AWS Outposts                     | Same as Standard                    | Same as Standard                    | On-premises applications integrated with AWS services  |
 
+# Transitioning objects/Moving between Storage Classes
+
+![GitHub Logo](https://github.com/gul-ahmed/AWS-Notes/blob/main/s3/s3%20transition.png)
