@@ -81,6 +81,24 @@ S3 is commonly used for backup and restore, archive, content storage, data lakes
 | Glacier Deep Archive    | Lowest-cost storage class for archival data with longer retrieval times | Same as Glacier                  | Same as Glacier                  | Rarely accessed data for compliance or legal reasons    |
 | Outposts                | Designed for objects stored on AWS Outposts                     | Same as Standard                    | Same as Standard                    | On-premises applications integrated with AWS services  |
 
+# Amazon S3 – Lifecycle Rules
+
+**Transition Actions** – configure objects to transition to another storage class
+
+- Move objects to Standard IA class 60 days after creation
+- Move to Glacier for archiving after 6 months
+
+**Expiration actions** – configure objects to expire (delete) after some time
+
+- Access log files can be set to delete after a 365 days
+- Can be used to delete old versions of files (if versioning is enabled)
+- Can be used to delete incomplete Multi-Part uploads
+
+• Rules can be created for a certain prefix (example: s3://mybucket/mp3/*)
+
+• Rules can be created for certain objects Tags (example: Department: Finance)
+
+
 # Transitioning objects/Moving between Storage Classes
 
 ![GitHub Logo](https://github.com/gul-ahmed/AWS-Notes/blob/main/s3/s3%20transition.png)
